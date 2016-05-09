@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<ApiHomework.Models.Contact>
+
+<h2>Contacts</h2>
+<hr />
+
+@foreach(var contact in Model)
+{
+    <p>@contact.Name</p>
+    <p>@contact.PhoneNumber</p>
+
+}
+
+
+

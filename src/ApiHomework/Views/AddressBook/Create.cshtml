@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ApiHomework.Models.Contact
+
+@using (Html.BeginForm())
+{
+    <p>Contact's Name</p>
+    @Html.TextBoxFor(model => model.Name)
+
+    <p>Contact's Phone</p>
+    @Html.TextBoxFor(model => model.PhoneNumber)
+    <input type="submit" value="Add new contact"/>
+
+}
+<p>@Html.ActionLink("Back to list", "Index")</p>
